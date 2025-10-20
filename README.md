@@ -65,7 +65,7 @@ MariaDB’s **system versioning** feature keeps track of all historical changes 
 
 ---
 
-## 👤 Author
+## Author
 
 Developed for the **MariaDB Hackathon** by ARAVIND R S
 
