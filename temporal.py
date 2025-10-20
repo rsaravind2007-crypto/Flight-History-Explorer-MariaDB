@@ -180,4 +180,5 @@ with tab3:
         else:
             st.success(f"Found {len(df)} historical records.")
             st.dataframe(df)
-            st.line_chart(df.set_index("row_start")["Airline_ID"])
+            
+
