@@ -32,15 +32,15 @@ Managing flight routes can be complex, especially when airlines frequently updat
 
 ---
 
-## 📊 Technology Stack
+## Technology Stack
 
-- **Frontend:** Streamlit (Python)  
+- **Frontend:** Python (Streamlit)  
 - **Database:** MariaDB (with System Versioning / Temporal Tables)  
 - **Data:** OpenFlights routes dataset  
 
 ---
 
-## 🛠️ Features Leveraging MariaDB
+## Features Leveraging MariaDB
 
 1. **System Versioning (Temporal Tables):**  
    - Every route update is automatically tracked and no additional tables or triggers required.  
@@ -57,7 +57,7 @@ Managing flight routes can be complex, especially when airlines frequently updat
 
 ## Key Concepts
 
-- **Airline Code:** Short code representing an airline (e.g., "2B" for Air Moldova).  
+- **Airline Code:** Short code representing an airline.  
 - **Airline ID:** Unique numeric ID corresponding to the airline in the database.  
 - **Row Start & Row End:** Automatically generated timestamps indicating when a row became active and when it was replaced.  
 
