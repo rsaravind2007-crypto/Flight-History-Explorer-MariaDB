@@ -3,4 +3,4 @@ pandas
 numpy
 mysql-connector-python
 datetime
-mariadb
+
