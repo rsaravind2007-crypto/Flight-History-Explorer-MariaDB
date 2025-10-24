@@ -3,40 +3,28 @@ import mysql.connector
 import pandas as pd
 from datetime import date
 
+#used for security as i uploaded this code in public github repo
+db_user = st.secrets["db_user"]          
+db_password = st.secrets["db_password"]  
+db_host = st.secrets["db_host"]          
+db_port = int(st.secrets["db_port"])     
 
-# -------------------------------
-#   Database Connection
-# -------------------------------
-
-
-
-# Optional: Use Streamlit Secrets for security
-db_user = st.secrets["db_user"]          # dbpgf10986516
-db_password = st.secrets["db_password"]  # Your SkySQL password
-db_host = st.secrets["db_host"]          # serverless-europe-west2.sysp0000.db2.skysql.com
-db_port = int(st.secrets["db_port"])     # 4053
 
 def create_connection():
-    """
-    Create a connection to the remote MariaDB (SkySQL) database using SSL.
-    Reads credentials from Streamlit secrets.
-    """
     try:
         conn = mysql.connector.connect(
             user=st.secrets["db_user"],
             password=st.secrets["db_password"],
             host=st.secrets["db_host"],
             port=st.secrets["db_port"],
-            database="openflights",  # your database name
-            #ssl_ca="certs/skysql_chain.pem",       # path to SSL chain file
-            #ssl_cert="certs/client-cert.pem",      # path to client certificate
-            #ssl_key="certs/client-key.pem"         # path to client key
+            database="openflights"
         )
         return conn
 
     except mysql.connector.Error as err:
         st.error(f"Error: {err}")
         return None
+
 # -----------------------------------
 # Create routes table if doesn't exists
 # -----------------------------------
@@ -204,4 +192,3 @@ with tab3:
             st.success(f"Found {len(df)} historical records.")
             st.dataframe(df)
             
-
