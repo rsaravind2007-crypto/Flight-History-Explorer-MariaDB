@@ -25,7 +25,7 @@ Managing flight routes can be complex, especially when airlines frequently updat
    Select a route and update its airline ID, source, or destination airport. All changes are recorded automatically.
 
 3. **View Flight History:**  
-   Pick a route and a date range to view historical changes. See who operated the route, when changes occurred, and the evolution of the route over time.
+   Pick a route and a date range to view historical changes. when changes occurred, and the evolution of the route over time.
 
 4. **Visualization:**  
    The app includes a simple chart to visualize changes in route details over time.  
