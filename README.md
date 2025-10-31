@@ -82,9 +82,9 @@ MariaDB’s **system versioning** feature keeps track of all historical changes 
 
 #### If hosting in skysql (Online) :
 - Create a SkySQL account and set up a database service.
-- Create the airports table with the structure as defined in source code and load the airport dataset. (or you can add data one by one)
+- Create the routes table with the structure as defined in source code and load the routes dataset. (or you can add data one by one)
 - Create a Streamlit Cloud account to host the web app online.
-- Use the spatial_GIS_network.py code and update the connection credentials to your SkySQL database.
+- Use the temporal_network.py code and update the connection credentials to your SkySQL database.
 - Deploy the Streamlit app via Streamlit Cloud for online access. 
 ---
 ### I have deployed the project using SkySQL’s free tier. The website is currently working fine as of October 31, 2025, but I am not certain whether it will remain active during the evaluation period.
