@@ -6,7 +6,7 @@ Welcome to **Flight History Explorer**, a simple yet powerful web app built usin
 
 ## Overview
 
-Managing flight routes can be complex, especially when airlines frequently update schedules, destinations, or codeshares. This project provides a **user-friendly interface** to:  
+Managing flight routes can be complex, especially when airlines frequently update schedules, destinations. This project provides a **user-friendly interface** to:  
 
 - Add new flight routes  
 - Update existing routes  
